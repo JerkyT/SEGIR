@@ -25,7 +25,7 @@ DenAT/
     ├── modelnet40_c
     └── pointcloud_c
 ```
-## Generate or download the shapely value corresponding to modelNet
+## Generate or download the Point Cloud Skeletons corresponding to modelNet
 Generate the shapely value corresponding to modelNet：
 ```bash
 bash ./script/gen_shapely.sh
