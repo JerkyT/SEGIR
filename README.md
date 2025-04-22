@@ -27,7 +27,7 @@ SEGIR/
     └── pointcloud_c
 ```
 ## Generate or download the ‘Signals in the point cloud domain’ corresponding to modelNet
-You can use this project to generate the point cloud skeletons for the ModelNet40 dataset by yourself: [link](https://github.com/clinplayer/Point2Skeleton)
+You can use this project to generate the point cloud skeletons for the ModelNet40 dataset by yourself: [Point2Skeleton](https://github.com/clinplayer/Point2Skeleton)
 
 Or you can also download it directly from this [link](https://drive.google.com/drive/folders/1vzz-3QjIQ8VBdwMa32cQGAi8aLmPp1RH?usp=sharing).
 You need to put the file in the specified directory：
@@ -73,4 +73,4 @@ bash ./script/test_pointcloudC.sh
 ```
 
 ## Acknowledgment
-This repository is built on reusing codes of [OpenPoints](https://github.com/guochengqian/openpoints) and [PointNeXt](https://github.com/guochengqian/PointNeXt). We integrated [APES](https://github.com/JunweiZheng93/APES) and [PointMetaBase](https://github.com/linhaojia13/PointMetaBase) into the code. We also have integrated methods for handling corrupted point clouds into our code, thanks to the excellent work of [ModelNet-C](https://github.com/jiachens/ModelNet40-C) ,[PointCloud-C](https://github.com/ldkong1205/PointCloud-C), and [GSDA](https://github.com/WoodwindHu/GSDA), [Point2Skeleton](https://github.com/clinplayer/Point2Skeleton).
+This repository is built on reusing codes of [OpenPoints](https://github.com/guochengqian/openpoints) and [PointNeXt](https://github.com/guochengqian/PointNeXt). We integrated [APES](https://github.com/JunweiZheng93/APES) and [PointMetaBase](https://github.com/linhaojia13/PointMetaBase) into the code. We also have integrated methods for handling corrupted point clouds into our code, thanks to the excellent work of [ModelNet-C](https://github.com/jiachens/ModelNet40-C) ,[PointCloud-C](https://github.com/ldkong1205/PointCloud-C), [GSDA](https://github.com/WoodwindHu/GSDA) and [Point2Skeleton](https://github.com/clinplayer/Point2Skeleton).
