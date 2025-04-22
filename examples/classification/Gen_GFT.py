@@ -52,13 +52,12 @@ def load_data(data_dir, partition, url):
     all_index = np.array([i for i in range(len(all_data))])
     return all_data, all_label, all_index
 
-data, label, index = load_data(data_dir = "./data/ModelNet40Ply2048", partition = 'test', url = f'https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip')
+data, label, index = load_data(data_dir = "./data/ModelNet40Ply2048", partition = 'train', url = f'https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip')
 
 # np.save('/home/liweigang/PointMetaBase/data/GFT/ModelNet40_2048.npy', data)
 # np.save('/home/liweigang/PointMetaBase/data/GFT/ModelNet40_Label.npy', label)
 
-data = np.load('./data/ModelNet40Ply2048/ModelNet40_2048_SK_test.npy')[:, 0, :, :]
-print(data.shape)
+data = np.load('./data/ModelNet40Ply2048/ModelNet40_2048_SK_train.npy')[:, 0, :, :]
 
 # Feature vector
 v_list = []
@@ -69,5 +68,5 @@ for point in data:
     v_list.append(x_)
     real_list.append(v_real)
 
-np.save('./data/GFT/Feature_vector_test.npy', np.concatenate(v_list, 0))
-np.save('./data/GFT/ModelNet40_real_test.npy', np.concatenate(real_list, 0))
+np.save('./data/GFT/Feature_vector_train.npy', np.concatenate(v_list, 0))
+np.save('./data/GFT/ModelNet40_real_train.npy', np.concatenate(real_list, 0))
